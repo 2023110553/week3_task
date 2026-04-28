@@ -1,0 +1,60 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    background-color: white;
+    width: 1200px;
+    height: 700px;
+    gap: 2px;
+}
+div{
+    color: orange;
+    background-color: black;
+}
+.area-1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.area-2{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(7,1fr);
+}
+
+.area-2 div:nth-child(2), .area-2 div:nth-child(3),
+.area-2 div:nth-child(5), .area-2 div:nth-child(6),
+.area-2 div:nth-child(8), .area-2 div:nth-child(11),.area-2 div:nth-child(14), 
+.area-2 div:nth-child(15),.area-2 div:nth-child(21), 
+.area-2 div:nth-child(22),.area-2 div:nth-child(28), 
+.area-2 div:nth-child(30), .area-2 div:nth-child(34),
+.area-2 div:nth-child(38), .area-2 div:nth-child(40), 
+.area-2 div:nth-child(46){
+    background-color: orange;
+}
+
+.area-3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    align-items:center;
+}
+
+.review{
+    font-size: 15px;
+}
+
+.area-4{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
